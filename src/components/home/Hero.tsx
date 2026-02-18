@@ -58,25 +58,27 @@ export function Hero() {
                         <span className="text-sm font-medium">Tecnología de siguiente nivel</span>
                     </motion.div>
 
-                    <h1 className="text-5xl md:text-7xl font-display font-bold mb-6">
-                        Eleva tu
-                        <span className="block gradient-text bg-[length:200%_auto] animate-shimmer-text">experiencia gaming</span>
+                    <h1 className="text-5xl md:text-7xl font-display font-bold mb-6 tracking-tight">
+                        Eleva tu <br className="hidden md:block" />
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-aether-primary via-aether-secondary to-aether-primary bg-[length:200%_auto] animate-shimmer-text">
+                            experiencia gaming
+                        </span>
                     </h1>
 
-                    <p className="text-xl text-text-secondary max-w-2xl mx-auto mb-8">
+                    <p className="text-xl text-text-secondary max-w-2xl mx-auto mb-8 leading-relaxed">
                         PCs gaming premium diseñadas con los mejores componentes.
                         Potencia, estilo y rendimiento sin compromisos.
                     </p>
 
-                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                        <Link to="/catalogo">
-                            <Button size="lg" className="group">
+                    <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                        <Link to="/catalogo" className="w-full sm:w-auto">
+                            <Button size="lg" className="group w-full sm:min-w-[180px]">
                                 Ver Catálogo
                                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                             </Button>
                         </Link>
-                        <Link to="/arma-tu-pc">
-                            <Button size="lg" variant="secondary">
+                        <Link to="/arma-tu-pc" className="w-full sm:w-auto">
+                            <Button size="lg" variant="secondary" className="w-full sm:min-w-[180px]">
                                 Arma tu PC
                             </Button>
                         </Link>

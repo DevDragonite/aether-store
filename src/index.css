@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-white/10;
+  }
+
+  body {
+    @apply text-text-primary font-sans antialiased bg-transparent;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-aether-surface/70 backdrop-blur-xl border border-white/10;
+  }
+
+  .glass-hover {
+    @apply hover:bg-aether-surface/80 hover:border-aether-primary/30 hover:shadow-lg hover:shadow-aether-primary/10 transition-all duration-300;
+  }
+
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-aether-primary via-aether-secondary to-aether-accent;
+  }
+}

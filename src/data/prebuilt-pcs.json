@@ -1,0 +1,374 @@
+[
+    {
+        "id": "pc-entry-001",
+        "name": "Aether Spark",
+        "tier": "entry",
+        "price": 899,
+        "images": [
+            "/assets/pcs/spark-1.jpg",
+            "/assets/pcs/spark-2.jpg"
+        ],
+        "description": "PC gaming de entrada perfecta para 1080p. Juega los títulos más populares con gran rendimiento.",
+        "specs": {
+            "cpu": "AMD Ryzen 5 7600",
+            "gpu": "NVIDIA RTX 4060 8GB",
+            "ram": "16GB DDR5 5200MHz",
+            "storage": "500GB NVMe SSD",
+            "motherboard": "B650 ATX",
+            "psu": "650W 80+ Bronze",
+            "case": "NZXT H510 Flow",
+            "cooler": "Stock AMD Cooler"
+        },
+        "performance": {
+            "gaming1080p": "60-120 FPS Ultra",
+            "productivity": "Edición básica, Office"
+        },
+        "highlights": [
+            "Ideal para empezar en gaming",
+            "Streaming en 1080p sin problemas",
+            "Expandible a futuro"
+        ],
+        "inStock": true,
+        "badge": "bestseller"
+    },
+    {
+        "id": "pc-entry-002",
+        "name": "Aether Flux",
+        "tier": "entry",
+        "price": 999,
+        "images": [
+            "/assets/pcs/flux-1.jpg"
+        ],
+        "description": "Excelente multitasking y gran flujo de aire.",
+        "specs": {
+            "cpu": "Intel Core i5-13400F",
+            "gpu": "AMD RX 7600 8GB",
+            "ram": "16GB DDR4 3200MHz",
+            "storage": "1TB NVMe SSD",
+            "motherboard": "B760 ATX",
+            "psu": "650W 80+ Bronze",
+            "case": "Corsair 4000D Airflow",
+            "cooler": "Arctic Freezer 34"
+        },
+        "performance": {
+            "gaming1080p": "90-144 FPS High"
+        },
+        "highlights": [
+            "Excelente multitasking",
+            "1TB de almacenamiento rápido",
+            "Gran flujo de aire"
+        ],
+        "inStock": true
+    },
+    {
+        "id": "pc-entry-003",
+        "name": "Aether Stream",
+        "tier": "entry",
+        "price": 1149,
+        "images": [
+            "/assets/pcs/stream-1.jpg"
+        ],
+        "description": "Perfecto para streaming y ray tracing básico.",
+        "specs": {
+            "cpu": "AMD Ryzen 5 7600X",
+            "gpu": "NVIDIA RTX 4060 Ti 8GB",
+            "ram": "16GB DDR5 5600MHz",
+            "storage": "1TB NVMe Gen 4 SSD",
+            "motherboard": "B650 ATX",
+            "psu": "750W 80+ Gold",
+            "case": "Lian Li LANCOOL 215",
+            "cooler": "be quiet! Pure Rock 2"
+        },
+        "performance": {
+            "gaming1080p": "120-165 FPS Ultra",
+            "gaming1440p": "60-90 FPS High"
+        },
+        "highlights": [
+            "Perfecto para streaming",
+            "Ray tracing básico",
+            "PSU de calidad para upgrades"
+        ],
+        "inStock": true,
+        "badge": "new"
+    },
+    {
+        "id": "pc-mid-001",
+        "name": "Aether Nexus",
+        "tier": "mid",
+        "price": 1499,
+        "originalPrice": 1699,
+        "images": [
+            "/assets/pcs/nexus-1.jpg"
+        ],
+        "description": "La mejor CPU para gaming de 2024 con RTX 4070.",
+        "specs": {
+            "cpu": "AMD Ryzen 7 7800X3D",
+            "gpu": "NVIDIA RTX 4070 12GB",
+            "ram": "32GB DDR5 6000MHz",
+            "storage": "1TB NVMe Gen 4 SSD",
+            "motherboard": "X670 ATX",
+            "psu": "850W 80+ Gold Modular",
+            "case": "NZXT H7 Flow",
+            "cooler": "Arctic Liquid Freezer II 280"
+        },
+        "performance": {
+            "gaming1440p": "100-165 FPS Ultra",
+            "gaming4k": "60 FPS Medium-High",
+            "productivity": "Edición 4K, 3D básico"
+        },
+        "highlights": [
+            "Mejor CPU para gaming 2024",
+            "Ray tracing excelente",
+            "Refrigeración líquida AIO"
+        ],
+        "inStock": true,
+        "badge": "bestseller"
+    },
+    {
+        "id": "pc-mid-002",
+        "name": "Aether Pulse",
+        "tier": "mid",
+        "price": 1699,
+        "images": [
+            "/assets/pcs/pulse-1.jpg"
+        ],
+        "description": "Multitasking extremo y 2TB de almacenamiento.",
+        "specs": {
+            "cpu": "Intel Core i7-14700K",
+            "gpu": "NVIDIA RTX 4070 Ti 12GB",
+            "ram": "32GB DDR5 6400MHz",
+            "storage": "2TB NVMe Gen 4 SSD",
+            "motherboard": "Z790 ATX",
+            "psu": "850W 80+ Gold Modular",
+            "case": "Corsair 5000D Airflow",
+            "cooler": "Corsair iCUE H150i"
+        },
+        "performance": {
+            "gaming1440p": "120-200 FPS Ultra",
+            "gaming4k": "80 FPS High",
+            "productivity": "Renderizado, streaming Pro"
+        },
+        "highlights": [
+            "Multitasking extremo",
+            "2TB de almacenamiento",
+            "RGB premium sincronizado"
+        ],
+        "inStock": true
+    },
+    {
+        "id": "pc-mid-003",
+        "name": "Aether Forge",
+        "tier": "mid",
+        "price": 1899,
+        "images": [
+            "/assets/pcs/forge-1.jpg"
+        ],
+        "description": "Workstation creativa con 20GB VRAM y gran almacenamiento.",
+        "specs": {
+            "cpu": "AMD Ryzen 9 7900X",
+            "gpu": "AMD RX 7900 XT 20GB",
+            "ram": "32GB DDR5 6000MHz",
+            "storage": "2TB NVMe Gen 4 + 2TB SATA SSD",
+            "motherboard": "X670E ATX",
+            "psu": "1000W 80+ Gold Modular",
+            "case": "Fractal Design Torrent",
+            "cooler": "Noctua NH-D15 Chromax"
+        },
+        "performance": {
+            "gaming1440p": "144+ FPS Ultra",
+            "gaming4k": "90-120 FPS High",
+            "productivity": "Workstation creativa"
+        },
+        "highlights": [
+            "20GB VRAM para creación",
+            "4TB almacenamiento total",
+            "Flujo de aire excepcional"
+        ],
+        "inStock": true,
+        "badge": "new"
+    },
+    {
+        "id": "pc-high-001",
+        "name": "Aether Titan",
+        "tier": "high",
+        "price": 2299,
+        "images": [
+            "/assets/pcs/titan-1.jpg"
+        ],
+        "description": "16 cores para máximo rendimiento y 4K gaming.",
+        "specs": {
+            "cpu": "AMD Ryzen 9 7950X",
+            "gpu": "NVIDIA RTX 4080 16GB",
+            "ram": "64GB DDR5 6000MHz",
+            "storage": "2TB NVMe Gen 5 + 2TB Gen 4",
+            "motherboard": "X670E Premium ATX",
+            "psu": "1000W 80+ Platinum Modular",
+            "case": "Lian Li O11 Dynamic EVO",
+            "cooler": "Arctic Liquid Freezer III 360"
+        },
+        "performance": {
+            "gaming4k": "120-144 FPS Ultra",
+            "productivity": "Renderizado profesional, IA"
+        },
+        "highlights": [
+            "16 cores para máximo rendimiento",
+            "4K gaming sin compromisos",
+            "Case icónico con vidrio templado"
+        ],
+        "inStock": true,
+        "badge": "bestseller"
+    },
+    {
+        "id": "pc-high-002",
+        "name": "Aether Apex",
+        "tier": "high",
+        "price": 2699,
+        "images": [
+            "/assets/pcs/apex-1.jpg"
+        ],
+        "description": "Top tier Intel performance con 4TB Gen 5.",
+        "specs": {
+            "cpu": "Intel Core i9-14900K",
+            "gpu": "NVIDIA RTX 4080 Super 16GB",
+            "ram": "64GB DDR5 6400MHz",
+            "storage": "4TB NVMe Gen 5",
+            "motherboard": "Z790 Maximus Hero",
+            "psu": "1200W 80+ Platinum Modular",
+            "case": "Corsair 7000X RGB",
+            "cooler": "Corsair iCUE H170i Elite"
+        },
+        "performance": {
+            "gaming4k": "144+ FPS Ultra RT",
+            "productivity": "Workstation extrema"
+        },
+        "highlights": [
+            "Top tier Intel performance",
+            "4TB almacenamiento Gen 5",
+            "RGB showcase premium"
+        ],
+        "inStock": true
+    },
+    {
+        "id": "pc-high-003",
+        "name": "Aether Quantum",
+        "tier": "high",
+        "price": 2999,
+        "images": [
+            "/assets/pcs/quantum-1.jpg"
+        ],
+        "description": "Flagship RTX 4090 con la mejor CPU gaming.",
+        "specs": {
+            "cpu": "AMD Ryzen 9 7950X3D",
+            "gpu": "NVIDIA RTX 4090 24GB",
+            "ram": "64GB DDR5 6400MHz",
+            "storage": "2TB NVMe Gen 5 + 4TB Gen 4",
+            "motherboard": "X670E Crosshair Hero",
+            "psu": "1200W 80+ Platinum",
+            "case": "Lian Li O11 Vision",
+            "cooler": "Custom AIO 360mm"
+        },
+        "performance": {
+            "gaming4k": "144+ FPS Ultra RT",
+            "productivity": "IA, 8K editing, 3D profesional"
+        },
+        "highlights": [
+            "Mejor CPU gaming + creación",
+            "RTX 4090 flagship",
+            "6TB almacenamiento total"
+        ],
+        "inStock": true,
+        "badge": "limited"
+    },
+    {
+        "id": "pc-ultimate-001",
+        "name": "Aether Infinity",
+        "tier": "ultimate",
+        "price": 3799,
+        "images": [
+            "/assets/pcs/infinity-1.jpg"
+        ],
+        "description": "Threadripper con 24 cores y refrigeración custom loop.",
+        "specs": {
+            "cpu": "AMD Threadripper 7960X",
+            "gpu": "NVIDIA RTX 4090 24GB",
+            "ram": "128GB DDR5 ECC",
+            "storage": "4TB NVMe Gen 5 + 8TB Gen 4",
+            "motherboard": "TRX50 Workstation",
+            "psu": "1600W 80+ Titanium",
+            "case": "Thermaltake Core P8",
+            "cooler": "Custom Loop Refrigeración Líquida"
+        },
+        "performance": {
+            "gaming4k": "144+ FPS Ultra todo",
+            "productivity": "Workstation profesional extrema"
+        },
+        "highlights": [
+            "24 cores Threadripper",
+            "128GB RAM para workflows pesados",
+            "Refrigeración custom loop"
+        ],
+        "inStock": true,
+        "badge": "limited"
+    },
+    {
+        "id": "pc-ultimate-002",
+        "name": "Aether Supernova",
+        "tier": "ultimate",
+        "price": 4299,
+        "images": [
+            "/assets/pcs/supernova-1.jpg"
+        ],
+        "description": "Dual RTX 4090 SLI y 8TB RAID ultra rápido.",
+        "specs": {
+            "cpu": "Intel Core i9-14900KS",
+            "gpu": "2x NVIDIA RTX 4090 SLI 24GB",
+            "ram": "128GB DDR5 7200MHz",
+            "storage": "8TB NVMe Gen 5 RAID",
+            "motherboard": "Z790 Extreme",
+            "psu": "2000W 80+ Titanium",
+            "case": "Lian Li O11D XL ROG",
+            "cooler": "Custom Loop + RGB"
+        },
+        "performance": {
+            "gaming4k": "200+ FPS Ultra RT",
+            "productivity": "Rendering farm personal"
+        },
+        "highlights": [
+            "Dual RTX 4090 SLI",
+            "8TB RAID ultra rápido",
+            "Custom loop con RGB"
+        ],
+        "inStock": false,
+        "badge": "limited"
+    },
+    {
+        "id": "pc-ultimate-003",
+        "name": "Aether Genesis",
+        "tier": "ultimate",
+        "price": 5499,
+        "images": [
+            "/assets/pcs/genesis-1.jpg"
+        ],
+        "description": "96 cores profesionales y Dual GPU profesional 48GB.",
+        "specs": {
+            "cpu": "AMD Threadripper PRO 7995WX",
+            "gpu": "2x NVIDIA RTX 6000 Ada 48GB",
+            "ram": "256GB DDR5 ECC REG",
+            "storage": "16TB NVMe Gen 5 Enterprise",
+            "motherboard": "WRX90 Workstation",
+            "psu": "2400W 80+ Titanium Redundant",
+            "case": "Custom Open Air",
+            "cooler": "Custom Loop Dual 480mm"
+        },
+        "performance": {
+            "productivity": "Server-grade workstation"
+        },
+        "highlights": [
+            "96 cores profesionales",
+            "Dual GPU profesional 48GB",
+            "Diseño custom único"
+        ],
+        "inStock": false,
+        "badge": "limited"
+    }
+]

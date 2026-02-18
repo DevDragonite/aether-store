@@ -1,0 +1,280 @@
+[
+    {
+        "id": "case-1",
+        "name": "NZXT H510 Flow",
+        "price": 89,
+        "brand": "NZXT",
+        "type": "case",
+        "image": "/assets/components/case-1.jpg",
+        "specs": {
+            "Form Factor": "ATX",
+            "Color": "Black"
+        },
+        "inStock": true
+    },
+    {
+        "id": "case-2",
+        "name": "Corsair 4000D Airflow",
+        "price": 104,
+        "brand": "Corsair",
+        "type": "case",
+        "image": "/assets/components/case-2.jpg",
+        "specs": {
+            "Form Factor": "ATX",
+            "Color": "White"
+        },
+        "inStock": true
+    },
+    {
+        "id": "case-3",
+        "name": "Lian Li O11 Dynamic",
+        "price": 139,
+        "brand": "Lian Li",
+        "type": "case",
+        "image": "/assets/components/case-3.jpg",
+        "specs": {
+            "Form Factor": "ATX",
+            "Color": "Black"
+        },
+        "inStock": true
+    },
+    {
+        "id": "case-4",
+        "name": "Fractal Design North",
+        "price": 129,
+        "brand": "Fractal Design",
+        "type": "case",
+        "image": "/assets/components/case-4.jpg",
+        "specs": {
+            "Form Factor": "ATX",
+            "Color": "Wood/Black"
+        },
+        "inStock": true
+    },
+    {
+        "id": "cpu-1",
+        "name": "AMD Ryzen 5 7600",
+        "price": 229,
+        "brand": "AMD",
+        "type": "cpu",
+        "image": "/assets/components/cpu-1.jpg",
+        "specs": {
+            "Cores": "6",
+            "Socket": "AM5"
+        },
+        "inStock": true
+    },
+    {
+        "id": "cpu-2",
+        "name": "Intel Core i5-13600K",
+        "price": 319,
+        "brand": "Intel",
+        "type": "cpu",
+        "image": "/assets/components/cpu-2.jpg",
+        "specs": {
+            "Cores": "14",
+            "Socket": "LGA1700"
+        },
+        "inStock": true
+    },
+    {
+        "id": "cpu-3",
+        "name": "AMD Ryzen 7 7800X3D",
+        "price": 399,
+        "brand": "AMD",
+        "type": "cpu",
+        "image": "/assets/components/cpu-3.jpg",
+        "specs": {
+            "Cores": "8",
+            "Socket": "AM5"
+        },
+        "inStock": true
+    },
+    {
+        "id": "gpu-1",
+        "name": "NVIDIA RTX 4060",
+        "price": 299,
+        "brand": "NVIDIA",
+        "type": "gpu",
+        "image": "/assets/components/gpu-1.jpg",
+        "specs": {
+            "VRAM": "8GB"
+        },
+        "inStock": true
+    },
+    {
+        "id": "gpu-2",
+        "name": "NVIDIA RTX 4070",
+        "price": 549,
+        "brand": "NVIDIA",
+        "type": "gpu",
+        "image": "/assets/components/gpu-2.jpg",
+        "specs": {
+            "VRAM": "12GB"
+        },
+        "inStock": true
+    },
+    {
+        "id": "gpu-3",
+        "name": "AMD RX 7800 XT",
+        "price": 499,
+        "brand": "AMD",
+        "type": "gpu",
+        "image": "/assets/components/gpu-3.jpg",
+        "specs": {
+            "VRAM": "16GB"
+        },
+        "inStock": true
+    },
+    {
+        "id": "gpu-4",
+        "name": "NVIDIA RTX 4090",
+        "price": 1599,
+        "brand": "NVIDIA",
+        "type": "gpu",
+        "image": "/assets/components/gpu-4.jpg",
+        "specs": {
+            "VRAM": "24GB"
+        },
+        "inStock": true
+    },
+    {
+        "id": "mobo-1",
+        "name": "MSI B650 Gaming Plus",
+        "price": 179,
+        "brand": "MSI",
+        "type": "motherboard",
+        "image": "/assets/components/mobo-1.jpg",
+        "specs": {
+            "Socket": "AM5",
+            "Form Factor": "ATX"
+        },
+        "inStock": true
+    },
+    {
+        "id": "mobo-2",
+        "name": "ASUS ROG Strix B760-A",
+        "price": 229,
+        "brand": "ASUS",
+        "type": "motherboard",
+        "image": "/assets/components/mobo-2.jpg",
+        "specs": {
+            "Socket": "LGA1700",
+            "Form Factor": "ATX"
+        },
+        "inStock": true
+    },
+    {
+        "id": "mobo-3",
+        "name": "Gigabyte X670 AORUS Elite",
+        "price": 279,
+        "brand": "Gigabyte",
+        "type": "motherboard",
+        "image": "/assets/components/mobo-3.jpg",
+        "specs": {
+            "Socket": "AM5",
+            "Form Factor": "ATX"
+        },
+        "inStock": true
+    },
+    {
+        "id": "ram-1",
+        "name": "Corsair Vengeance 32GB",
+        "price": 109,
+        "brand": "Corsair",
+        "type": "ram",
+        "image": "/assets/components/ram-1.jpg",
+        "specs": {
+            "Speed": "6000MHz",
+            "Type": "DDR5"
+        },
+        "inStock": true
+    },
+    {
+        "id": "ram-2",
+        "name": "G.Skill Trident Z5 32GB",
+        "price": 129,
+        "brand": "G.Skill",
+        "type": "ram",
+        "image": "/assets/components/ram-2.jpg",
+        "specs": {
+            "Speed": "6400MHz",
+            "Type": "DDR5"
+        },
+        "inStock": true
+    },
+    {
+        "id": "ssd-1",
+        "name": "Samsung 990 Pro 1TB",
+        "price": 99,
+        "brand": "Samsung",
+        "type": "storage",
+        "image": "/assets/components/ssd-1.jpg",
+        "specs": {
+            "Type": "NVMe Gen4"
+        },
+        "inStock": true
+    },
+    {
+        "id": "ssd-2",
+        "name": "WD Black SN850X 2TB",
+        "price": 159,
+        "brand": "WD",
+        "type": "storage",
+        "image": "/assets/components/ssd-2.jpg",
+        "specs": {
+            "Type": "NVMe Gen4"
+        },
+        "inStock": true
+    },
+    {
+        "id": "psu-1",
+        "name": "Corsair RM850x",
+        "price": 129,
+        "brand": "Corsair",
+        "type": "psu",
+        "image": "/assets/components/psu-1.jpg",
+        "specs": {
+            "Wattage": "850W",
+            "Efficiency": "80+ Gold"
+        },
+        "inStock": true
+    },
+    {
+        "id": "psu-2",
+        "name": "Seasonic Vertex GX-1000",
+        "price": 189,
+        "brand": "Seasonic",
+        "type": "psu",
+        "image": "/assets/components/psu-2.jpg",
+        "specs": {
+            "Wattage": "1000W",
+            "Efficiency": "80+ Gold"
+        },
+        "inStock": true
+    },
+    {
+        "id": "cool-1",
+        "name": "Deepcool AK620",
+        "price": 64,
+        "brand": "Deepcool",
+        "type": "cooler",
+        "image": "/assets/components/cool-1.jpg",
+        "specs": {
+            "Type": "Air"
+        },
+        "inStock": true
+    },
+    {
+        "id": "cool-2",
+        "name": "NZXT Kraken 240",
+        "price": 139,
+        "brand": "NZXT",
+        "type": "cooler",
+        "image": "/assets/components/cool-2.jpg",
+        "specs": {
+            "Type": "AIO Liquid"
+        },
+        "inStock": true
+    }
+]

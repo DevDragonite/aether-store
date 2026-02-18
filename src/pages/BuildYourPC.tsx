@@ -81,44 +81,64 @@ export function BuildYourPC() {
                     )}
                 </div>
 
-                {/* Component Selector (Right Side Panel) */}
+                {/* Component Selector Overlay (Full Right Half) */}
                 <AnimatePresence>
                     {activeCategory && (
                         <motion.div
-                            initial={{ opacity: 0, x: 100 }}
+                            initial={{ opacity: 0, x: '100%' }}
                             animate={{ opacity: 1, x: 0 }}
-                            exit={{ opacity: 0, x: 100 }}
-                            className="lg:col-span-5 fixed inset-y-0 right-0 w-full md:w-[500px] lg:static lg:w-auto lg:h-[calc(100vh-100px)] pointer-events-none flex flex-col justify-end pb-6 lg:pb-0"
+                            exit={{ opacity: 0, x: '100%' }}
+                            transition={{ type: 'spring', damping: 25, stiffness: 200 }}
+                            className="fixed inset-y-0 right-0 w-full lg:w-[50%] bg-aether-darker border-l border-white/10 shadow-2xl z-50 flex flex-col"
                         >
-                            <div className="lg:hidden absolute top-4 right-4 z-50 pointer-events-auto">
-                                <button onClick={() => setActiveCategory(null)}>
+                            {/* Header */}
+                            <div className="flex items-center justify-between p-6 border-b border-white/10 bg-aether-darker/50 backdrop-blur-md">
+                                <h2 className="text-xl font-bold">Seleccionar Componente</h2>
+                                <button onClick={() => setActiveCategory(null)} className="p-2 hover:bg-white/10 rounded-full transition-colors">
                                     <X />
                                 </button>
                             </div>
 
-                            {/* Component List Container */}
-                            <div className="pointer-events-auto w-full glass rounded-xl lg:rounded-b-none p-6 relative flex-1 overflow-hidden mb-4 lg:mb-6 h-[calc(100%-180px)]">
-                                <ComponentSelector
-                                    category={activeCategory}
-                                    onClose={() => setActiveCategory(null)}
-                                />
+                            {/* Split Content Area */}
+                            <div className="flex-1 flex overflow-hidden relative">
+                                {/* Component List (Scrollable Left Column) */}
+                                <div className="flex-1 overflow-y-auto custom-scrollbar p-6 space-y-4 pb-32 lg:pb-6">
+                                    <ComponentSelector
+                                        category={activeCategory}
+                                        onClose={() => setActiveCategory(null)}
+                                    />
+                                </div>
+
+                                {/* Fixed Summary Card (Right Column - Desktop Only) */}
+                                <div className="hidden lg:flex w-80 flex-col justify-end p-6 pointer-events-none">
+                                    <div className="pointer-events-auto bg-aether-surface/80 backdrop-blur-xl border border-white/10 rounded-2xl p-6 shadow-2xl">
+                                        <div className="flex justify-between items-center mb-4">
+                                            <div className="text-sm text-text-secondary">Total Estimado</div>
+                                            <div className="text-3xl font-bold gradient-text">${totalPrice.toLocaleString()}</div>
+                                        </div>
+                                        <div className="space-y-3">
+                                            <Button onClick={handleAddToCart} className="w-full">
+                                                <ShoppingCart className="w-5 h-5 mr-2" />
+                                                Agregar al Carrito
+                                            </Button>
+                                            <Button variant="ghost" onClick={clearBuild} className="w-full text-text-muted hover:text-text-primary">
+                                                <RotateCcw className="w-4 h-4 mr-2" />
+                                                Reiniciar Configuración
+                                            </Button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
 
-                            {/* Floating Summary Card */}
-                            <div className="pointer-events-auto w-full glass border border-white/10 rounded-xl p-6 shadow-2xl relative z-50">
-                                <div className="flex justify-between items-center mb-4">
-                                    <div className="text-sm text-text-secondary">Total Estimado</div>
-                                    <div className="text-2xl font-bold gradient-text">${totalPrice.toLocaleString()}</div>
+                            {/* Mobile/Tablet Sticky Footer (Visible < lg) */}
+                            <div className="lg:hidden p-4 bg-aether-surface border-t border-white/10 space-y-3">
+                                <div className="flex justify-between items-center">
+                                    <span className="text-text-secondary">Total:</span>
+                                    <span className="text-xl font-bold gradient-text">${totalPrice.toLocaleString()}</span>
                                 </div>
-                                <div className="flex gap-2">
-                                    <Button variant="ghost" onClick={clearBuild} title="Reiniciar" className="shrink-0">
-                                        <RotateCcw className="w-5 h-5" />
-                                    </Button>
-                                    <Button onClick={handleAddToCart} className="flex-1">
-                                        <ShoppingCart className="w-5 h-5 mr-2" />
-                                        Agregar al Carrito
-                                    </Button>
-                                </div>
+                                <Button onClick={handleAddToCart} className="w-full">
+                                    Agregar al Carrito
+                                </Button>
                             </div>
                         </motion.div>
                     )}

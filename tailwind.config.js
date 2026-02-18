@@ -22,6 +22,9 @@ export default {
                     muted: '#64748b',
                 }
             },
+            boxShadow: {
+                'glow': '0 0 20px -5px rgba(99, 102, 241, 0.4)',
+            },
             fontFamily: {
                 sans: ['Inter Variable', 'sans-serif'],
                 display: ['Space Grotesk', 'sans-serif'],

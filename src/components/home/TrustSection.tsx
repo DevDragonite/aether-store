@@ -1,10 +1,10 @@
 export function TrustSection() {
     const brands = [
-        { name: "ASUS ROG", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Republic_Of_Gamers_Logo.svg/1200px-Republic_Of_Gamers_Logo.svg.png" },
+        { name: "ASUS ROG", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Republic_Of_Gamers_Logo.svg/2560px-Republic_Of_Gamers_Logo.svg.png" },
         { name: "NVIDIA", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Nvidia_logo.svg/1024px-Nvidia_logo.svg.png" },
         { name: "AMD", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/AMD_Logo.svg/1200px-AMD_Logo.svg.png" },
-        { name: "Corsair", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Corsair_Components_Logo.svg/800px-Corsair_Components_Logo.svg.png" },
-        { name: "MSI", logo: "https://upload.wikimedia.org/wikipedia/commons/2/29/MSI_Logo.svg" },
+        { name: "Corsair", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Corsair_Components_Logo.svg/2560px-Corsair_Components_Logo.svg.png" },
+        { name: "MSI", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/MSI_Logo.svg/2560px-MSI_Logo.svg.png" },
         { name: "Intel", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Intel_logo_2023.svg/1200px-Intel_logo_2023.svg.png" },
         { name: "Gigabyte", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Gigabyte_Technology_logo_20080107.svg/1280px-Gigabyte_Technology_logo_20080107.svg.png" },
         { name: "NZXT", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/NZXT_logo.svg/1280px-NZXT_logo.svg.png" }

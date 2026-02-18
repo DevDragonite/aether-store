@@ -35,7 +35,7 @@ export function FeaturedPCs() {
                         >
                             <GlassCard>
                                 {/* Image */}
-                                <div className="relative h-48 mb-4 rounded-lg overflow-hidden bg-gradient-to-br from-aether-surface to-aether-elevated">
+                                <div className="relative h-48 mb-4 rounded-lg overflow-hidden group-hover:scale-105 transition-transform duration-500">
                                     {pc.badge && (
                                         <div className="absolute top-3 right-3 z-10">
                                             <Badge variant={pc.badge === 'bestseller' ? 'success' : 'default'}>
@@ -43,10 +43,16 @@ export function FeaturedPCs() {
                                             </Badge>
                                         </div>
                                     )}
-                                    {/* Placeholder - replace with actual image */}
-                                    <div className="w-full h-full flex items-center justify-center text-6xl">
-                                        💻
-                                    </div>
+                                    <img
+                                        src={
+                                            index === 0 ? "https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&q=80&w=800" :
+                                                index === 1 ? "https://images.unsplash.com/photo-1593640408182-31c70c8268f5?auto=format&fit=crop&q=80&w=800" :
+                                                    "https://images.unsplash.com/photo-1603481588273-2f908a9a7a1b?auto=format&fit=crop&q=80&w=800"
+                                        }
+                                        alt={pc.name}
+                                        className="w-full h-full object-cover"
+                                    />
+                                    <div className="absolute inset-0 bg-gradient-to-t from-aether-surface via-transparent to-transparent opacity-60" />
                                 </div>
 
                                 {/* Content */}

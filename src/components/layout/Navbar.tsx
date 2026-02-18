@@ -66,12 +66,13 @@ export function Navbar() {
                             <Link
                                 key={link.path}
                                 to={link.path}
-                                className={`text-sm font-medium transition-colors ${location.pathname === link.path
-                                    ? 'text-aether-primary'
-                                    : 'text-text-secondary hover:text-text-primary'
+                                className={`text-sm font-medium transition-all duration-300 relative group py-1 ${location.pathname === link.path
+                                    ? 'text-transparent bg-clip-text bg-gradient-to-r from-aether-primary to-aether-secondary font-bold'
+                                    : 'text-gray-300 hover:text-white'
                                     }`}
                             >
                                 {link.label}
+                                <span className={`absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-aether-primary to-aether-secondary transform origin-left transition-transform duration-300 ${location.pathname === link.path ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100'}`} />
                             </Link>
                         ))}
                     </div>

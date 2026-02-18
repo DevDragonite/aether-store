@@ -60,7 +60,7 @@ export function Hero() {
 
                     <h1 className="text-5xl md:text-7xl font-display font-bold mb-6 tracking-tight">
                         Eleva tu <br className="hidden md:block" />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-aether-primary via-aether-secondary to-aether-primary bg-[length:200%_auto] animate-shimmer-text">
+                        <span className="inline-block text-transparent bg-clip-text bg-gradient-to-r from-aether-primary via-aether-secondary via-aether-accent to-aether-primary bg-[length:200%_auto] animate-shimmer-text pb-1">
                             experiencia gaming
                         </span>
                     </h1>
@@ -72,13 +72,13 @@ export function Hero() {
 
                     <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                         <Link to="/catalogo" className="w-full sm:w-auto">
-                            <Button size="lg" className="group w-full sm:min-w-[180px]">
+                            <Button size="lg" className="group w-full sm:w-[200px] flex items-center justify-center">
                                 Ver Catálogo
                                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                             </Button>
                         </Link>
                         <Link to="/arma-tu-pc" className="w-full sm:w-auto">
-                            <Button size="lg" variant="secondary" className="w-full sm:min-w-[180px]">
+                            <Button size="lg" variant="secondary" className="w-full sm:w-[200px] flex items-center justify-center">
                                 Arma tu PC
                             </Button>
                         </Link>

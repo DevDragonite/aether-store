@@ -1,18 +1,46 @@
+import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, Zap } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Button } from '../ui/Button';
 
 export function Hero() {
+    const [currentImage, setCurrentImage] = useState(0);
+
+    // Background images (Gaming setups)
+    const images = [
+        "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&q=80&w=1920",
+        "https://images.unsplash.com/photo-1593640408182-31c70c8268f5?auto=format&fit=crop&q=80&w=1920",
+        "https://images.unsplash.com/photo-1603481588273-2f908a9a7a1b?auto=format&fit=crop&q=80&w=1920",
+        "https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&q=80&w=1920"
+    ];
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentImage((prev: number) => (prev + 1) % images.length);
+        }, 3000); // 3 seconds for better UX (1.5s is too fast for background)
+        return () => clearInterval(interval);
+    }, [images.length]);
+
     return (
         <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-            {/* Animated background */}
-            <div className="absolute inset-0 bg-gradient-to-br from-aether-darker via-aether-dark to-aether-darker">
-                <div className="absolute inset-0 opacity-30">
-                    <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-aether-primary/20 rounded-full blur-3xl animate-float" />
-                    <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-aether-secondary/20 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }} />
+            {/* Animated background images */}
+            {images.map((img, index) => (
+                <div
+                    key={index}
+                    className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${index === currentImage ? 'opacity-15' : 'opacity-0'}`}
+                >
+                    <img
+                        src={img}
+                        alt=""
+                        className="w-full h-full object-cover"
+                    />
+                    <div className="absolute inset-0 bg-aether-darker/50 mix-blend-multiply" />
                 </div>
-            </div>
+            ))}
+
+            {/* Gradient Overlay for depth */}
+            <div className="absolute inset-0 bg-gradient-to-t from-aether-darker via-aether-darker/80 to-transparent" />
 
             <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 text-center">
                 <motion.div

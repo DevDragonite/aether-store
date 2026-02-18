@@ -1,13 +1,13 @@
 export function TrustSection() {
     const brands = [
-        { name: "ASUS ROG", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Republic_of_Gamers_logo.svg/2560px-Republic_of_Gamers_logo.svg.png" },
-        { name: "NVIDIA", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Nvidia_logo.svg/2560px-Nvidia_logo.svg.png" },
-        { name: "AMD", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/AMD_Logo.svg/2560px-AMD_Logo.svg.png" },
-        { name: "Corsair", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Corsair_Components_logo.svg/2560px-Corsair_Components_logo.svg.png" },
-        { name: "MSI", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/MSI_Logo_2019.svg/2560px-MSI_Logo_2019.svg.png" },
-        { name: "Intel", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Intel_logo_2023.svg/2560px-Intel_logo_2023.svg.png" },
-        { name: "Gigabyte", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Gigabyte_Technology_logo_20080107.svg/2560px-Gigabyte_Technology_logo_20080107.svg.png" },
-        { name: "NZXT", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/NZXT_logo.svg/2560px-NZXT_logo.svg.png" }
+        { name: "ASUS ROG", logo: "https://upload.wikimedia.org/wikipedia/commons/d/de/Asus_Tek_Republic_of_Gamers_Logo.svg" },
+        { name: "NVIDIA", logo: "https://upload.wikimedia.org/wikipedia/commons/2/21/Nvidia_logo.svg" },
+        { name: "AMD", logo: "https://upload.wikimedia.org/wikipedia/commons/7/7c/AMD_Logo.svg" },
+        { name: "Corsair", logo: "https://upload.wikimedia.org/wikipedia/commons/3/36/Corsair_Components_logo.svg" },
+        { name: "MSI", logo: "https://upload.wikimedia.org/wikipedia/commons/8/8e/MSI_Logo_2019.svg" },
+        { name: "Intel", logo: "https://upload.wikimedia.org/wikipedia/commons/8/85/Intel_logo_2023.svg" },
+        { name: "Gigabyte", logo: "https://upload.wikimedia.org/wikipedia/commons/c/c3/Gigabyte_Technology_logo_20080107.svg" },
+        { name: "NZXT", logo: "https://upload.wikimedia.org/wikipedia/commons/5/5d/NZXT_logo.svg" }
     ];
 
     return (

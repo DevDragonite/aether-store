@@ -23,7 +23,12 @@
     @apply hover:bg-aether-surface/80 hover:border-aether-primary/40 hover:shadow-glow hover:shadow-aether-primary/20 hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 ease-out;
   }
 
-  .gradient-text {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-aether-primary via-aether-secondary to-aether-accent;
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
 }

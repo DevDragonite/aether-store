@@ -9,10 +9,11 @@ import type { Component } from '../../types/component';
 
 interface ComponentSelectorProps {
     category: string;
-    onClose: () => void;
+    onClose?: () => void;
+    inline?: boolean;
 }
 
-export function ComponentSelector({ category, onClose }: ComponentSelectorProps) {
+export function ComponentSelector({ category, onClose, inline = false }: ComponentSelectorProps) {
     const { components } = useCatalogStore();
     const { addComponent, build } = useBuilderStore();
 
@@ -22,7 +23,7 @@ export function ComponentSelector({ category, onClose }: ComponentSelectorProps)
 
     const handleSelect = (component: Component) => {
         addComponent(component);
-        onClose();
+        if (onClose) onClose();
     };
 
     const currentSelection = build.components[category];
@@ -35,17 +36,19 @@ export function ComponentSelector({ category, onClose }: ComponentSelectorProps)
 
     return (
         <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: 50 }}
-            className="h-full flex flex-col"
+            initial={{ opacity: 0, y: inline ? -10 : 0, x: inline ? 0 : 50 }}
+            animate={{ opacity: 1, y: 0, x: 0 }}
+            exit={{ opacity: 0, y: inline ? -10 : 0, x: inline ? 0 : 50 }}
+            className={`h-full flex flex-col ${inline ? '' : ''}`}
         >
-            <div className="flex justify-between items-center mb-6">
-                <h3 className="text-xl font-bold capitalize">Seleccionar {category}</h3>
-                <button onClick={onClose} className="p-2 hover:bg-white/10 rounded-full">
-                    <X className="w-5 h-5" />
-                </button>
-            </div>
+            {!inline && (
+                <div className="flex justify-between items-center mb-6">
+                    <h3 className="text-xl font-bold capitalize">Seleccionar {category}</h3>
+                    <button onClick={onClose} className="p-2 hover:bg-white/10 rounded-full">
+                        <X className="w-5 h-5" />
+                    </button>
+                </div>
+            )}
 
             <div className="flex-grow overflow-y-auto space-y-4 pr-2 custom-scrollbar">
                 {categoryComponents.map((comp) => (

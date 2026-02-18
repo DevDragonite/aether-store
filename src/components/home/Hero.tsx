@@ -59,8 +59,8 @@ export function Hero() {
                     </motion.div>
 
                     <h1 className="text-5xl md:text-7xl font-display font-bold mb-6 tracking-tight">
-                        Eleva tu <br className="hidden md:block" />
-                        <span className="inline-block text-transparent bg-clip-text bg-gradient-to-r from-aether-primary via-aether-secondary via-aether-accent to-aether-primary bg-[length:200%_auto] animate-shimmer-text pb-1">
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-aether-primary via-aether-secondary via-aether-accent to-aether-primary bg-[length:200%_auto] animate-shimmer-text">
+                            Eleva tu <br className="hidden md:block" />
                             experiencia gaming
                         </span>
                     </h1>

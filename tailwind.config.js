@@ -31,6 +31,7 @@ export default {
             },
             animation: {
                 'shimmer': 'shimmer 2s infinite',
+                'shimmer-text': 'shimmer-text 8s linear infinite',
                 'float': 'float 6s ease-in-out infinite',
                 'aurora': 'aurora 20s ease infinite alternate',
             },
@@ -38,6 +39,10 @@ export default {
                 shimmer: {
                     '0%': { transform: 'translateX(-100%)' },
                     '100%': { transform: 'translateX(100%)' },
+                },
+                'shimmer-text': {
+                    '0%': { backgroundPosition: '200% center' },
+                    '100%': { backgroundPosition: '-200% center' },
                 },
                 float: {
                     '0%, 100%': { transform: 'translateY(0)' },

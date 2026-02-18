@@ -22,8 +22,8 @@ export function TrustSection() {
                 <div className="relative flex overflow-x-hidden group">
                     <div className="animate-marquee whitespace-nowrap flex space-x-12 items-center">
                         {[...brands, ...brands].map((brand, index) => (
-                            <div key={`${brand.name}-${index}`} className="inline-block w-32 md:w-40 opacity-50 hover:opacity-100 transition-opacity duration-300 grayscale hover:grayscale-0">
-                                <img src={brand.logo} alt={brand.name} className="h-12 w-full object-contain filter brightness-200 contrast-0 invert-[.1] hover:filter-none" />
+                            <div key={`${brand.name}-${index}`} className="inline-block w-32 md:w-40 opacity-40 hover:opacity-100 transition-all duration-500 grayscale hover:grayscale-0 transform hover:scale-110 cursor-pointer">
+                                <img src={brand.logo} alt={brand.name} className="h-12 w-full object-contain filter brightness-0 invert hover:filter-none hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.5)]" />
                             </div>
                         ))}
                     </div>

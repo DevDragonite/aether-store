@@ -20,7 +20,7 @@
   }
 
   .glass-hover {
-    @apply hover:bg-aether-surface/80 hover:border-aether-primary/30 hover:shadow-lg hover:shadow-aether-primary/10 transition-all duration-300;
+    @apply hover:bg-aether-surface/90 hover:border-aether-primary/50 hover:shadow-[0_0_30px_-5px_var(--tw-shadow-color)] hover:shadow-aether-primary/20 hover:-translate-y-1 transition-all duration-300;
   }
 
   .gradient-text {

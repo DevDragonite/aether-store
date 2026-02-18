@@ -54,32 +54,35 @@ export function ComponentSelector({ category, onClose, inline = false }: Compone
                 {categoryComponents.map((comp) => (
                     <GlassCard
                         key={comp.id}
-                        className={`p-4 ${isSelected(comp.id) ? 'border-aether-primary ring-1 ring-aether-primary' : ''}`}
+                        className={`p-3 sm:p-4 ${isSelected(comp.id) ? 'border-aether-primary ring-1 ring-aether-primary' : ''}`}
                         onClick={() => handleSelect(comp)}
                     >
-                        <div className="flex gap-4">
-                            <div className="w-20 h-20 bg-white/5 rounded-lg flex items-center justify-center text-3xl shrink-0">
+                        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
+                            {/* Image / Icon */}
+                            <div className="w-full sm:w-20 h-32 sm:h-20 bg-white/5 rounded-lg flex items-center justify-center text-4xl sm:text-3xl shrink-0">
                                 {/* Image placeholder */}
                                 📦
                             </div>
+
+                            {/* Content */}
                             <div className="flex-grow">
-                                <div className="flex justify-between items-start">
+                                <div className="flex justify-between items-start mb-2">
                                     <div>
-                                        <h4 className="font-bold">{comp.name}</h4>
-                                        <p className="text-sm text-text-secondary">{comp.brand}</p>
+                                        <h4 className="font-bold text-sm sm:text-base line-clamp-1">{comp.name}</h4>
+                                        <p className="text-xs text-text-secondary">{comp.brand}</p>
                                     </div>
-                                    {isSelected(comp.id) && <Check className="text-aether-primary w-5 h-5" />}
+                                    {isSelected(comp.id) && <Check className="text-aether-primary w-5 h-5 shrink-0 ml-2" />}
                                 </div>
 
-                                <div className="mt-2 text-xs text-text-muted grid grid-cols-2 gap-1">
+                                <div className="text-xs text-text-muted grid grid-cols-2 gap-x-2 gap-y-1 mb-3">
                                     {Object.entries(comp.specs).slice(0, 4).map(([k, v]) => (
-                                        <div key={k}><span className="opacity-70">{k}:</span> {v}</div>
+                                        <div key={k} className="truncate"><span className="opacity-70">{k}:</span> {v}</div>
                                     ))}
                                 </div>
 
-                                <div className="mt-3 flex justify-between items-center">
-                                    <span className="font-bold text-lg gradient-text">${comp.price}</span>
-                                    <Button size="sm" variant={isSelected(comp.id) ? "outline" : "primary"}>
+                                <div className="flex justify-between items-center gap-2">
+                                    <span className="font-bold text-base sm:text-lg gradient-text shrink-0">${comp.price}</span>
+                                    <Button size="sm" variant={isSelected(comp.id) ? "outline" : "primary"} className="w-full sm:w-auto text-xs px-2 h-8">
                                         {isSelected(comp.id) ? 'Seleccionado' : 'Seleccionar'}
                                     </Button>
                                 </div>

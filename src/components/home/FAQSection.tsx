@@ -4,24 +4,24 @@ import { ChevronDown, ChevronUp } from 'lucide-react';
 
 const faqs = [
     {
-        question: "¿Cuánto tiempo demora el armado de un PC gamer personalizado?",
-        answer: "El tiempo estándar de armado y pruebas es de 3 a 5 días hábiles. Para configuraciones con refrigeración líquida custom, puede tomar hasta 10 días."
+        question: "¿Dónde están ubicados?",
+        answer: "Nuestra tienda física y showroom se encuentra en el Centro Comercial Parque Cerro Verde, Caracas, Venezuela. Puedes visitarnos para probar nuestros equipos y recibir asesoría personalizada."
     },
     {
-        question: "¿Ofrecen garantía en los PCs armados?",
-        answer: "Sí, todos nuestros PCs incluyen 2 años de garantía en mano de obra y la garantía oficial de cada fabricante para los componentes individuales (generalmente 3 años)."
+        question: "¿Cuánto tiempo demora el armado de un PC?",
+        answer: "El tiempo estándar de armado y pruebas es de 48 a 72 horas hábiles. Para configuraciones extremas con refrigeración líquida custom, puede tomar hasta 5 días hábiles."
     },
     {
-        question: "¿Puedo hacer upgrade de mi PC actual con ustedes?",
-        answer: "Absolutamente. Trae tu equipo para una evaluación gratuita y te recomendaremos las mejores opciones de mejora para maximizar tu rendimiento."
+        question: "¿Ofrecen garantía en Venezuela?",
+        answer: "Sí, todos nuestros PCs incluyen 1 año de garantía directa en tienda por mano de obra y la garantía oficial de cada fabricante para los componentes individuales."
     },
     {
-        question: "¿Realizan envíos a todo Chile?",
-        answer: "Hacemos envíos asegurados a todas las regiones de Chile a través de nuestros partners logísticos certificados."
+        question: "¿Realizan envíos al interior del país?",
+        answer: "Hacemos envíos asegurados a toda Venezuela a través de Zoom, Tealca y Liberty Express, con embalaje de alta protección para garantizar que tu equipo llegue perfecto."
     },
     {
-        question: "¿Qué formas de pago aceptan?",
-        answer: "Aceptamos tarjetas de crédito/débito, transferencias bancarias y pago en criptomonedas (USDT, BTC, ETH)."
+        question: "¿Qué métodos de pago aceptan?",
+        answer: "Aceptamos Divisas en efectivo, Zelle, Transferencias en Bolívares (Banesco/Mercantil/Pago Móvil) y Criptomonedas (USDT/BTC)."
     }
 ];
 

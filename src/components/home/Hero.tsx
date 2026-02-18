@@ -32,7 +32,7 @@ export function Hero() {
 
                     <h1 className="text-5xl md:text-7xl font-display font-bold mb-6">
                         Eleva tu
-                        <span className="block gradient-text">experiencia gaming</span>
+                        <span className="block gradient-text bg-[length:200%_auto] animate-shimmer-text">experiencia gaming</span>
                     </h1>
 
                     <p className="text-xl text-text-secondary max-w-2xl mx-auto mb-8">
